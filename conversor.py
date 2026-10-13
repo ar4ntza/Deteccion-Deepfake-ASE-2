@@ -44,7 +44,7 @@ def procesar(nombre):
     except Exception as e:
         return f"{nombre}: {e}"
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     os.makedirs(CARPETA_SALIDA, exist_ok=True)
     archivos = [f for f in os.listdir(CARPETA_ENTRADA) if f.lower().endswith(EXTENSIONES)]
 
